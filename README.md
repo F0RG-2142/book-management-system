@@ -14,7 +14,7 @@ Requests to the api and their arguments/required bodies
 #### Get all books
 
 ```http
-  GET http://host:port/0.0.0.0:3000/book/
+GET http://host:port/0.0.0.0:3000/book/
 ```
 
 | Parameter | Type     | Description                |
@@ -24,7 +24,7 @@ Requests to the api and their arguments/required bodies
 #### Get book
 
 ```http
-  GET http://host:port/0.0.0.0:3000/book/{bookID}
+GET http://host:port/0.0.0.0:3000/book/{bookID}
 ```
 
 | Parameter | Type     | Description                       |
@@ -33,7 +33,7 @@ Requests to the api and their arguments/required bodies
 
 #### Create book
 ```http
-  POST http://host:port/0.0.0.0:3000/book/
+POST http://host:port/0.0.0.0:3000/book/
 ```
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
