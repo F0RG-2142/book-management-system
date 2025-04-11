@@ -2,14 +2,14 @@ package models
 
 import (
 	"github.com/F0RG-2142/book-management-system/pkg/config"
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 var db *gorm.DB
 
 type Book struct {
 	gorm.Model
-	Name        string `gorm:""json:"name"`
+	Name        string `gorm:"column:name" json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
 }
@@ -21,7 +21,6 @@ func init() {
 }
 
 func (b *Book) CreateBook() *Book {
-	db.NewRecord(b)
 	db.Create(&b)
 	return b
 }
